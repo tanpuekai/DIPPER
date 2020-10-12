@@ -3,7 +3,8 @@ library(scales)
 load("../resources/anita.RData")
 load("../resources/MATRISOME.RData")
 
-oydata<-read.csv("old-and-young.aug21-2019.txt",sep="\t")
+#oydata<-read.csv("old-and-young.aug21-2019.txt",sep="\t")
+load("../preprocess/proteome.young-old.n66.RData")
 
 head(oydata)
 geneSymb<-as.character(oydata[,3])
