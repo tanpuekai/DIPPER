@@ -1,7 +1,7 @@
-load("G:/kathy-cheah-ddd/resources/GO_INFLAMMATORY_RESPONSE.RData")
-load("G:/kathy-cheah-ddd/resources/ligands.GO.and.HGNC.RData")
-load("G:/kathy-cheah-ddd/resources/NABA.break.down.RData")
-load("G:/kathy-cheah-ddd/resources/TF.CD.receptors.human.mouse.RData")
+load("../resources/GO_INFLAMMATORY_RESPONSE.RData")
+load("../resources/ligands.GO.and.HGNC.RData")
+load("../resources/NABA.break.down.RData")
+load("../resources/TF.CD.receptors.human.mouse.RData")
 
 library(grid)
 library(lattice)
