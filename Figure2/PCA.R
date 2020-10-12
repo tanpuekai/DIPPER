@@ -16,6 +16,8 @@ tempData <- mice(data[ind5&numval>39,],m=5,maxit=50,meth='pmm',seed=500)
 completedData <- complete(tempData,1)
 
 ############# IMPUTATIONS ####################
+indY<-grep("oung",colnames(completedData))
+indO<-grep("old",colnames(completedData))
 
 completedDataY <- completedData[,indY] 
 completedDataO <- completedData[,indO] 
