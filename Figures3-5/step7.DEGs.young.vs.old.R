@@ -1,13 +1,14 @@
 library(scales)
 library(stringr)
 
-load("G:/kathy-cheah-ddd/resources/MATRISOME.RData")
-load("G:/kathy-cheah-ddd/resources/NABA.break.down.RData")
-load("G:/databases/gencode/v25/gencode.v25.annotation.gene.gtf.RData")
-load("G:/kathy-cheah-ddd/resources/TF.CD.receptors.human.mouse.RData")
+load("../resources/MATRISOME.RData")
+load("../resources/NABA.break.down.RData")
+load("../resources/gencode.v25.annotation.gene.gtf.RData")
+load("../resources/TF.CD.receptors.human.mouse.RData")
 
 
-oydata<-read.csv("old-and-young.aug21-2019.txt",sep="\t")
+#oydata<-read.csv("old-and-young.aug21-2019.txt",sep="\t")
+load("../preprocess/proteome.young-old.n66.RData")
 
 head(oydata)
 geneSymb<-as.character(oydata[,3])
