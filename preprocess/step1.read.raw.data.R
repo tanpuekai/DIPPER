@@ -1,6 +1,6 @@
 
 #oydata<-read.csv("old-and-young.aug21-2019.txt",sep="\t")
-load("")
+load("proteome.young-old.n66.RData")
 
 head(oydata)
 geneSymb<-as.character(oydata[,3])
