@@ -6,7 +6,7 @@ head(oydata)
 geneSymb<-as.character(oydata[,3])
 geneSymb2<-gsub(";.*$","",geneSymb)
 
-setdiff(geneSymb2,annot[,"gene_name"])
+#setdiff(geneSymb2,annot[,"gene_name"])
 nonMatrisome<-setdiff(geneSymb2,MATRISOME[,1])
 
 data0<-as.matrix(oydata[,-seq(3)])
