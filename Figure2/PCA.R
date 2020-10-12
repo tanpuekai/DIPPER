@@ -37,6 +37,8 @@ pc4<-paste0(paste0("PC",seq(33)," ("),percent(res4$sdev^2/sum(res4$sdev^2)),")")
 pc5<-paste0(paste0("PC",seq(33)," ("),percent(res5$sdev^2/sum(res5$sdev^2)),")")
 pc6<-paste0(paste0("PC",seq(33)," ("),percent(res6$sdev^2/sum(res6$sdev^2)),")")
 
+innerOuter<-Compartments
+innerOuter[innerOuter!="OAF"]<-"inner"
 
 COL_Compartments<-hue_pal()(4)[as.integer(factor(Compartments))]
 PCH_ages<-c(17,16)[as.integer(factor(Ages))]
