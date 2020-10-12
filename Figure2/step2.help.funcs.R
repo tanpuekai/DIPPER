@@ -119,7 +119,8 @@ PCAfunc<-function(indG1,IMPUTE,indi,NUMsample,indS=seq(66),SVMage=F,SVMlevel=F,S
 		pch=PCH_ages2,
 		col=COL_AFNP2)
 	text(PCAi$x[,1],PCAi$x[,2],
-		colnames(data.163)[indS],
+		#colnames(data.163)[indS],
+		rownames(PCAi$x),
 		cex=1/2)
 	legend("topleft",fill=hue_pal()(4),
 		legend=levels(factor(Compartments)))
@@ -156,7 +157,8 @@ PCAfunc<-function(indG1,IMPUTE,indi,NUMsample,indS=seq(66),SVMage=F,SVMlevel=F,S
 		pch=PCH_ages2,
 		col=COL_AFNP2)
 	text(PCAi$x[,1],PCAi$x[,3],
-		colnames(data.163)[indS],
+#		colnames(data.163)[indS],
+		rownames(PCAi$x),
 		cex=1/2)
 	legend("topleft",fill=hue_pal()(4),
 		legend=levels(factor(Compartments)))
