@@ -1,5 +1,5 @@
-# human_disc_proteome
-human IVD proteome
+# DIPPER
+human IVD proteome resource
 
 ############# RAW data #############
 
